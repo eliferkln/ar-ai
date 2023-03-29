@@ -1,7 +1,16 @@
-import React from "react";
+import { useState } from "react";
+import Container from "./components/container/Container";
+import Tensorflow from "./components/tensorflowsigner/tensorflow";
 
 function App() {
-  return <div className="App">app</div>;
+  const [modelName, setModelName] = useState("");
+
+  return (
+    <>
+      <Tensorflow setModelName={setModelName} modelName={modelName} />
+      <Container modelName={modelName} />
+    </>
+  );
 }
 
 export default App;
