@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./container.module.css";
 import Model from "../model/model";
+
 interface IProps {
   modelName: string;
 }
-
 const Container: React.FC<IProps> = ({ modelName }) => {
   return (
     <div>

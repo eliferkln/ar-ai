@@ -35,7 +35,6 @@ interface IProps {
 
 const Model: React.FC<IProps> = ({ modelName }) => {
   const [data, setdata] = useState<any>(Object.entries(ModelData));
-  const [modelx, setModelx] = useState<string>("");
   const [newName, setNewName] = useState<any>([]);
 
   const test = () => {
