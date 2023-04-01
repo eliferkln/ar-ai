@@ -24,8 +24,6 @@ const Tensorflow: React.FC<IProps> = ({ setModelName, modelName }) => {
     setMaxPredictions(tmModel.getTotalClasses());
   }
 
-  let classPrediction = "";
-
   async function predict(webcamRef: any, labelContainer: any) {
     if (model && webcamRef && webcamRef.current && labelContainer) {
       const prediction = await model.predict(webcamRef.current.video);
